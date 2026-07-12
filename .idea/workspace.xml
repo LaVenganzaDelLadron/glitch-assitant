@@ -4,27 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3259e209-bc5a-406b-8ce6-628b59df8e7f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai/ollama_provider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai/prompts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/command/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/command/analyze_system.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/command/open_app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/command/system.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/assistant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speech/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speech/listen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speech/speak.py" afterDir="false" />
+    <list default="true" id="3259e209-bc5a-406b-8ce6-628b59df8e7f" name="Changes" comment="the first commit of my assistant ai">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai/prompts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai/prompts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech/listen.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech/listen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,67 +27,79 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LaVenganzaDelLadron"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/LaVenganzaDelLadron/glitch-assitant.git",
+    "accountId": "865aa70e-6cd0-406a-bb0a-ab54717e1b3b"
+  }
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.9153857392228955" />
-      <entry key="MS500" value="3.741470257389176" />
-      <entry key="S2" value="4.62107767799381" />
-      <entry key="S5" value="4.8422711865589" />
-      <entry key="S10" value="4.920065306598476" />
-      <entry key="S30" value="4.980826488447659" />
-      <entry key="S60" value="5.106832027345216" />
-      <entry key="M2" value="6.593303676069261" />
-      <entry key="M5" value="23.03550230227204" />
-      <entry key="M10" value="54.09476859868207" />
-      <entry key="M15" value="75.40564459530584" />
-      <entry key="M30" value="107.38721480493204" />
-      <entry key="H1" value="129.12291182915868" />
-      <entry key="H2" value="141.84383456401952" />
-      <entry key="H4" value="148.73213868335165" />
-      <entry key="D1" value="154.76139985573425" />
-      <entry key="W1" value="155.82237628474567" />
+      <entry key="MS100" value="1.0000000000009548" />
+      <entry key="MS500" value="1.0039443815484477" />
+      <entry key="S2" value="1.2647970590988618" />
+      <entry key="S5" value="1.757208510045385" />
+      <entry key="S10" value="2.1851941310426373" />
+      <entry key="S30" value="2.664880494749123" />
+      <entry key="S60" value="2.83118669136789" />
+      <entry key="M2" value="3.3148186151931673" />
+      <entry key="M5" value="10.319479029798357" />
+      <entry key="M10" value="33.02304739079853" />
+      <entry key="M15" value="54.58209453302919" />
+      <entry key="M30" value="94.663440704618" />
+      <entry key="H1" value="126.64177070595358" />
+      <entry key="H2" value="146.9965862070392" />
+      <entry key="H4" value="158.50199910044014" />
+      <entry key="D1" value="168.84435648602013" />
+      <entry key="W1" value="170.69022131338195" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="5.731914342817191E-264" />
-      <entry key="S2" value="1.547301415826075E-66" />
-      <entry key="S5" value="4.74056516271364E-27" />
-      <entry key="S10" value="6.891695819353883E-14" />
-      <entry key="S30" value="4.935407226273896E-5" />
-      <entry key="S60" value="0.012283132084156262" />
-      <entry key="M2" value="0.27707681414318136" />
-      <entry key="M5" value="2.4698097256068245" />
-      <entry key="M10" value="5.87641461486009" />
-      <entry key="M15" value="8.06398300615282" />
-      <entry key="M30" value="11.2541587391529" />
-      <entry key="H1" value="13.386651272919252" />
-      <entry key="H2" value="14.626169071047826" />
-      <entry key="H4" value="15.295316184445353" />
-      <entry key="D1" value="15.87999672746611" />
-      <entry key="W1" value="15.982792895184364" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.9858768099814525E-170" />
+      <entry key="S5" value="1.3157733118334984E-68" />
+      <entry key="S10" value="1.148157790429864E-34" />
+      <entry key="S30" value="5.8507941443347134E-12" />
+      <entry key="S60" value="4.229168946799185E-6" />
+      <entry key="M2" value="0.005141302316346288" />
+      <entry key="M5" value="0.501248030263679" />
+      <entry key="M10" value="2.6473235402082027" />
+      <entry key="M15" value="4.738919499899422" />
+      <entry key="M30" value="8.627359598353763" />
+      <entry key="H1" value="11.72072245096831" />
+      <entry key="H2" value="13.685850931457942" />
+      <entry key="H4" value="14.795480267589719" />
+      <entry key="D1" value="15.792304523502192" />
+      <entry key="W1" value="15.97015440091299" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.864000076749697" />
-      <entry key="MS500" value="3.6964720815155268" />
-      <entry key="S2" value="4.603375973140493" />
-      <entry key="S5" value="4.834476474026" />
-      <entry key="S10" value="4.916039657017989" />
-      <entry key="S30" value="4.979469137492268" />
-      <entry key="S60" value="5.117807750742742" />
-      <entry key="M2" value="6.861414774622185" />
-      <entry key="M5" value="25.46383229721994" />
-      <entry key="M10" value="59.91762025258575" />
-      <entry key="M15" value="83.41957354463464" />
-      <entry key="M30" value="118.6058532638575" />
-      <entry key="H1" value="142.48829972227648" />
-      <entry key="H2" value="156.45835559138152" />
-      <entry key="H4" value="164.0213568323154" />
-      <entry key="D1" value="170.6403403726617" />
-      <entry key="W1" value="171.80501729174392" />
+      <entry key="MS100" value="0.9265880618912556" />
+      <entry key="MS500" value="0.9887511311531245" />
+      <entry key="S2" value="1.2599160193575443" />
+      <entry key="S5" value="1.754178011392598" />
+      <entry key="S10" value="2.183114823030201" />
+      <entry key="S30" value="2.663959809029228" />
+      <entry key="S60" value="2.8306831302414404" />
+      <entry key="M2" value="3.3193625725952125" />
+      <entry key="M5" value="10.8115661407625" />
+      <entry key="M10" value="35.645517955248955" />
+      <entry key="M15" value="59.29099143184541" />
+      <entry key="M30" value="103.2631863849063" />
+      <entry key="H1" value="138.34365958124857" />
+      <entry key="H2" value="160.67142313205798" />
+      <entry key="H4" value="173.29152146392488" />
+      <entry key="D1" value="184.6356005254814" />
+      <entry key="W1" value="186.66022249631405" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -154,11 +149,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783813097057</updated>
-      <workItem from="1783813098068" duration="2043000" />
+      <workItem from="1783813098068" duration="2716000" />
     </task>
+    <task id="LOCAL-00001" summary="the first commit of my assistant ai">
+      <option name="closed" value="true" />
+      <created>1783815162612</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1783815162612</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="the first commit of my assistant ai" />
+    <option name="LAST_COMMIT_MESSAGE" value="the first commit of my assistant ai" />
   </component>
 </project>
