@@ -1,108 +1,44 @@
 # Glitch Assistant
 
-![Glitch Assistant](./glitch.gif)
-
-Glitch Assistant is a voice-driven CLI AI assistant built with Python. It listens to your microphone, transcribes speech, sends the text to an Ollama model, and speaks the response back.
-
-## Supported OS
-
-- **Arch Linux only** (recommended + tested)
-
-## Features
-
-- Speech-to-text (Whisper via `faster-whisper`)
-- Text generation via **Ollama**
-- Text-to-speech (pyttsx3)
-
-## Requirements
-
-- Python 3.10+ (best on a fresh Arch install)
-- A running **Ollama** server on `http://127.0.0.1:11434`
-- Working microphone + speakers
+A small command-line assistant powered by Groq.
 
 ## Install
 
-### 1) Create and activate a virtual environment
+Python 3.10+ is required.
 
 ```bash
-python3 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
-```
-
-### 2) Install Python dependencies
-
-```bash
 pip install -r requirements.txt
 ```
 
-### 3) Install system dependencies (Arch)
+## Configure
 
-This project uses:
-- `sounddevice` (PortAudio)
-- `scipy` (required by `sounddevice` WAV helpers used here)
+Create a `.env` file in the project root:
 
-```bash
-sudo pacman -S --needed portaudio libffi alsa-utils
+```dotenv
+GROQ_API_KEY=your-groq-api-key
 ```
 
-If you hit build issues with Python packages:
+Optional settings:
 
-```bash
-sudo pacman -S --needed base-devel python-pip
-```
-
-## Configure Ollama
-
-Make sure Ollama is running:
-
-```bash
-ollama serve
-```
-
-Pull a model (example):
-
-```bash
-ollama pull llama3.2:3b
-```
-
-Optional environment variables:
-
-- `OLLAMA_HOST` (default: `http://127.0.0.1:11434`)
-- `OLLAMA_MODEL` (default: `llama3.2:3b`)
-- `OLLAMA_TIMEOUT` (default: `120` seconds)
+- `GROQ_MODEL` — defaults to `openai/gpt-oss-20b`
+- `GROQ_BASE_URL` — defaults to Groq's OpenAI-compatible API URL
+- `GROQ_TIMEOUT` — request timeout in seconds; defaults to `60`
 
 ## Run
+
+Pass a prompt directly:
+
+```bash
+python main.py "Explain dependency injection simply"
+```
+
+Or start interactive mode:
 
 ```bash
 python main.py
 ```
 
-The app will say: **“Glitch Assistant is online.”**
-
-Then it loops:
-1. Records audio (5 seconds)
-2. Transcribes it
-3. Sends prompt to Ollama
-4. Speaks the response
-
-### Exit
-
-Say one of:
-- `exit`
-- `quit`
-- `shutdown`
-
-## Notes / Troubleshooting
-
-- Microphone issues (ALSA):
-
-```bash
-arecord -l
+Enter `exit`, `quit`, or press `Ctrl-D` to leave interactive mode.
 ```
-
-- Verify Ollama is reachable:
-
-```bash
-curl http://127.0.0.1:11434/api/tags
-```
-

@@ -1,6 +1,2 @@
-ollama
-faster-whisper
-pyttsx3
-sounddevice
-scipy
-
+openai
+python-dotenv
